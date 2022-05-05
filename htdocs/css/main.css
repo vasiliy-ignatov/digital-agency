@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'open-sans';
+  src: url("../fonts/open-sans.eot");
+  src: url("../fonts/open-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans.woff") format("woff"), url("../fonts/open-sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  width: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+input {
+  border: none; }
+
+button {
+  border: none; }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 150px;
+  font-size: 36px;
+  text-align: left; }
+  @media (max-width: 1440px) {
+    .container {
+      padding: 0 45px; } }
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 80px; } }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 40px; } }
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 20px; } }
+
+.section {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 30px; }
+
+.footer {
+  height: 80px;
+  padding: 21px;
+  font-size: 12px;
+  text-align: center; }
