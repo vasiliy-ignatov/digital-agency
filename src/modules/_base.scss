@@ -28,37 +28,13 @@ button {
 }
 
 body {
-    font-family: $OpenSans;
+    font-family: $RobotoCondensed;
 
     margin: 0;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 150px;
-    font-size: 36px;
-    text-align: left;
-    //background: rebeccapurple;
-
-    @media ($wide) {
-        //background: red;
-        padding: 0 45px;
-    }
-
-    @media ($medium) {
-        padding: 0 80px;
-        //background: green;
-    }
-
-    @media ($small) {
-        //background: blue;
-        padding: 0 40px;
-    }
-
-    @media ($phone) {
-        //background: yellow;
-        padding: 0 20px;
-    }
+    max-width: 320px;
 }
 
