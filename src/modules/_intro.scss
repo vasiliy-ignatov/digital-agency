@@ -1,0 +1,18 @@
+.intro {
+    height: 193px;  
+    width: 320px;
+}
+
+.intro__text {    
+    color: #fff;
+    font-family: $RobotoCondensed;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    padding: 36px 40px 0;    
+}
+
+.intro__slide {    
+    background: #333 url("../img/intro-bg.jpg") no-repeat center/cover;
+}
