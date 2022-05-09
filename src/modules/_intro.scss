@@ -1,6 +1,8 @@
 .intro {
-    height: 193px;  
-    width: 320px;
+    // height: 193px;  
+    // width: 320px;
+    height: 193px;
+    overflow-y: scroll;
 }
 
 .intro__text {    
@@ -13,6 +15,6 @@
     padding: 36px 40px 0;    
 }
 
-.intro__slide {    
+.intro__slide {
     background: #333 url("../img/intro-bg.jpg") no-repeat center/cover;
 }
