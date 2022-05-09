@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="./css/vendor.css" type="text/css" rel="stylesheet">
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container">
+        <div class="header__wrapper"><img src="img/Header_logo.png" alt="Logo" class="header__logo">
+          <div class="header-nav">
+            <input type="checkbox" id="nav-menu">
+            <label for="nav-menu" class="header-nav__btn"><span></span></label>
+            <ul class="menu-list">
+              <li class="menu-list__link"><a href="#">Menu item</a></li>
+              <li class="menu-list__link"><a href="#">Menu item</a></li>
+              <li class="menu-list__link"><a href="#">Menu item</a></li>
+              <li class="menu-list__link"><a href="#">Menu item</a></li>
+              <li class="menu-list__link"><a href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="component">
+          <div class="component__title">Пример адаптивной сетки:</div>
+          <div class="grid">
+            <div class="grid__col grid__col_12 grid__md-col_6 grid__lg-col_3">
+              <div class="block">
+                <p><b>lg: </b>.grid__lg-col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__col_12</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_12 grid__md-col_6 grid__lg-col_3">
+              <div class="block">
+                <p><b>lg: </b>.grid__lg-col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__col_12</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_12 grid__md-col_6 grid__lg-col_3">
+              <div class="block">
+                <p><b>lg: </b>.grid__lg-col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__col_12</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_12 grid__md-col_6 grid__lg-col_3">
+              <div class="block">
+                <p><b>lg: </b>.grid__lg-col_3</p>
+                <p><b>md: </b>.grid__md-col_6</p>
+                <p><b>sm: </b>.grid__col_12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component">
+          <div class="component__title">Пример адаптивной сетки с пуллом:</div>
+          <div class="grid">
+            <div class="grid__col grid__col_10 grid__pull_1 grid__md-col_6 grid__md-pull_3 grid__lg-col_10 grid__lg-pull_1">
+              <div class="block">
+                <p><b>lg: </b>.grid__col_8.grid__pull_2</p>
+                <p><b>md: </b>.grid__md-col_6.grid__md-pull_3</p>
+                <p><b>sm: </b>.grid__sm-col_10.grid__sm-pull_1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component">
+          <div class="component__title">Пример адаптивной сетки с ордером:</div>
+          <div class="grid">
+            <div class="grid__col grid__col_12 grid__order_1 grid__md-order_3 grid__lg-col_4 grid__lg-order_2">
+              <div class="block"><b>Col №1</b>
+                <p><b>lg: </b>.grid__lg-col_4.grid__lg-order_2</p>
+                <p><b>md: </b>.grid__md-order_3</p>
+                <p><b>sm: </b>.grid__col_12.grid__order_1</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_12 grid__order_3 grid__md-order_1 grid__lg-col_4 grid__lg-order_3">
+              <div class="block"><b>Col №2</b>
+                <p><b>lg: </b>.grid__lg-col_4.grid__lg-order_3</p>
+                <p><b>md: </b>.grid__md-order_1</p>
+                <p><b>sm: </b>.grid__col_12.grid__order_1</p>
+              </div>
+            </div>
+            <div class="grid__col grid__col_12 grid__order_1 grid__md-order_2 grid__lg-col_4 grid__lg-order_1">
+              <div class="block"><b>Col №3</b>
+                <p><b>lg: </b>.grid__lg-col_4.grid__lg-order_1</p>
+                <p><b>md: </b>.grid__md-order_2</p>
+                <p><b>sm: </b>.grid__col_12.grid__order_1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-copyright">© 2022 Axure Themes</div>
+    </footer>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/vendor.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+  </body>
+</html>

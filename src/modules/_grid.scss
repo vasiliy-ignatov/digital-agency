@@ -1,0 +1,88 @@
+@function calcColWidth($col, $i) {
+	@return 100% / $col * $i
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+
+	@media ($sm) {
+		margin: 0 -10px;
+	}
+}
+
+.grid__col {
+	padding: 0 5px;
+
+	@media ($sm) {
+		padding: 0 10px;
+	}
+}
+
+@for $i from 1 to 13 {
+	.grid__col_#{$i} {
+		flex: 0 0 calcColWidth(12, $i);
+		max-width: calcColWidth(12, $i);
+	}
+	.grid__order_#{$i} {
+		order: $i;
+	}
+}
+
+@for $i from 1 to 12 {
+	.grid__pull_#{$i} {
+		margin-left: calcColWidth(12, $i);
+	}
+}
+
+@for $i from 1 to 12 {
+	.grid__push_#{$i} {
+		margin-right: calcColWidth(12, $i);
+	}
+}
+
+@media ($sm) {
+	@for $i from 0 to 13 {
+		.grid__md-col_#{$i} {
+			flex: 0 0 calcColWidth(12, $i);
+			max-width: calcColWidth(12, $i);
+		}
+		.grid__md-pull_#{$i} {
+			margin-left: calcColWidth(12, $i);
+		}
+		.grid__md-order_#{$i} {
+			order: $i;
+		}
+	}
+}
+
+@media ($md) {
+	@for $i from 0 to 13 {
+		.grid__lg-col_#{$i} {
+			flex: 0 0 calcColWidth(12, $i);
+			max-width: calcColWidth(12, $i);
+		}
+		.grid__lg-pull_#{$i} {
+			margin-left: calcColWidth(12, $i);
+		}
+		.grid__lg-order_#{$i} {
+			order: $i;
+		}
+	}
+}
+
+@media ($lg) {
+	@for $i from 0 to 13 {
+		.grid__xl-col_#{$i} {
+			flex: 0 0 calcColWidth(12, $i);
+			max-width: calcColWidth(12, $i);
+		}
+		.grid__xl-pull_#{$i} {
+			margin-left: calcColWidth(12, $i);
+		}
+		.grid__xl-order_#{$i} {
+			order: $i;
+		}
+	}
+}
