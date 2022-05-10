@@ -1,0 +1,33 @@
+.promo {  
+    width: 100%;
+    background-color: $darkblue;  
+    color: $white;
+    font-family: $RobotoCondensed;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding: 40px 20px;
+    
+    &__title {
+        margin: 0 10px 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0 16px 40px;
+    }
+
+    &__btn {
+        height: 60px;
+        width: 200px;
+        border-radius: 3px;
+        background-color: $cream;
+        color: $darkblue;
+        font-family: $RobotoCondensed;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
