@@ -22,7 +22,7 @@
         }
     }
 
-    &__sub-title {
+    &__promo {
         color: $gray;
         font-size: 20px;
         line-height: 24px;
@@ -44,6 +44,15 @@
         margin-bottom: 20px;
     }
 
+    &__sub-title {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: $gray;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
     &__list {
         margin-top: 30px;
         display: flex;
@@ -53,6 +62,7 @@
 
     &__item {        
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 277px;
@@ -63,33 +73,30 @@
             margin-top: 0;
         }
     }
-}
 
-.services__content {
-    margin-top: 25px;
-}
+    &__content {
+        margin-top: 25px;
+    }
 
-.service-title {
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    color: $gray;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    &__description {
+        opacity: 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: $gray_;
+        margin-top: 15px;
+    }
 
-.block__text {
-    font-size: 16px;
-    line-height: 18px;
-    color: $gray_;
-    margin-top: 15px;
-}
+    &__about {
+        opacity: 0;
+        color: $darkblue;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 15px;
 
-.service-about {
-    color: $darkblue;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 15px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

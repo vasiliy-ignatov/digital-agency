@@ -12,23 +12,16 @@ const swiper = new Swiper('.swiper', {
 let servicesItems = document.querySelectorAll('.services__item');
 
 for (servicesItem of servicesItems) {
-  let blockText = servicesItem.querySelector('.block');
-
-  let serviceDescription = document.createElement('p');
-  serviceDescription.textContent = "Создадим бла-бла-бла";
-  serviceDescription.classList.add('block__text');
-
-  let serviceAbout = document.createElement('p');
-  serviceAbout.textContent = 'Подробнее';
-  serviceAbout.classList.add('service-about');
+  let servicesDesc = servicesItem.querySelector('.services__description');
+  let servicesAbout = servicesItem.querySelector('.services__about'); 
   
   servicesItem.addEventListener('mouseover', function() {    
-    blockText.appendChild(serviceDescription);
-    blockText.appendChild(serviceAbout);
+    servicesDesc.style.opacity = 1;
+    servicesAbout.style.opacity = 1;
   })
 
   servicesItem.addEventListener('mouseout', function() {
-    serviceDescription.remove();
-    serviceAbout.remove();
+    servicesDesc.style.opacity = 0;
+    servicesAbout.style.opacity = 0;
   })
 }
