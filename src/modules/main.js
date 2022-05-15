@@ -25,3 +25,20 @@ for (servicesItem of servicesItems) {
     servicesAbout.style.opacity = 0;
   })
 }
+
+/*let newsItems = document.querySelectorAll('.news__item');
+
+for (newsItem of newsItems) {
+  let newsSubTitle = newsItem.querySelector('.news__sub-title');
+  let newsMask = newsItem.querySelector('.news__mask'); 
+  
+  newsItem.addEventListener('mouseover', function() {    
+    newsSubTitle.style.display = none;
+    newsMask.style.display = block;
+  })
+
+  newsItem.addEventListener('mouseout', function() {
+    newsSubTitle.style.display = block;
+    newsMask.style.display = none;
+  })
+}*/

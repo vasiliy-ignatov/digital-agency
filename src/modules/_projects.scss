@@ -1,0 +1,53 @@
+.projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: $RobotoCondensed;
+    color: $white;
+
+    &__list {
+        margin-top: 75px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__img {
+        box-shadow: 0px 4px 4px rgba(71, 110, 77, 0.351506);
+        border-radius: 4px;
+        }
+
+    &__sub-title {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $darkblue;
+        margin: 20px 0;
+    }
+
+    &__mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 256px;
+        min-height: 230px;
+        background: $creamOpacity;
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        border-radius: 4px;
+        opacity: 0;
+        transition: opacity .25s ease-in;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}

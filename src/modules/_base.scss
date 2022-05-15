@@ -40,3 +40,68 @@ body {
     padding: 0 20px;
 }
 
+main {
+    padding-top: 80px;
+}
+
+.btn {
+    width: 230px;
+        height: 60px;
+        background-color: $darkblue;
+        color: $cream;
+        font-family: $RobotoCondensed;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18px;
+        margin-top: 85px;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $darkblue_;
+        }
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: relative;
+    color: $gray;
+    font-weight: 400;
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 8px;
+        background-color: $darkblue;
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &_promo {
+        color: $white;
+        margin: 0 10px 10px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &_services {
+        color: $darkblue;
+
+        &::after {
+            width: 100px;
+        }
+    }
+
+    &_projects {
+        color: $white;
+        
+        &::after {
+            background-color: $white;
+        }
+    }
+}

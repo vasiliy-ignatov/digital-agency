@@ -16,64 +16,147 @@ block page
 			.swiper-pagination
 	section.section
 		.promo
-			.promo__title Вы полюбите нас с первой встречи!
+			.title.title_promo Вы полюбите нас с первой встречи!
 			.promo__text Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.
 			button.promo__btn Перезвоните мне
 	section.section
 		.container
 			.services
 				.services__content
-					.services__title Сервис
+					.title.title_services Сервис
 					.services__promo От идеи до незабываемого и измеримого результата.
 					.services__text Интеграция безупречного производства, передовых технологий и тщательного измерения производительности.
 				.services__list
 					.component
 						.grid
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO_Icons_(8).png", alt="Logo")
-									p.services__sub-title Стратегия
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (10).png", alt="Logo")
-									p.services__sub-title Анализ
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (18).png", alt="Logo")
-									p.services__sub-title Соц сети
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (34).png", alt="Logo")
-									p.services__sub-title Развитие
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (33).png", alt="Logo")
-									p.services__sub-title Контент
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (21).png", alt="Logo")
-									p.services__sub-title Дизайн UX
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (9).png", alt="Logo")
-									p.services__sub-title Таргетированная реклама
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
-							.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
-								.services__item
-									img.services__img(src="../img/SEO Icons (27).png", alt="Logo")
-									p.services__sub-title Продукт
-									.services__description Lorem ipsum dolor sit amet, consectetur 
-									a(href="#").services__about Подробнее
+							-
+								let servicesItems = [
+									{
+										subTitle: "Стратегия",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Анализ",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Соц сети",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Развитие",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Контент",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Дизайн UX",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Таргетированная реклама",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Продукт",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									}
+								];
+							each val, i in servicesItems
+								.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+									.services__item
+										img.services__img(src=`../img/services/i-services-${i+1}.png`, alt="Logo")
+										p.services__sub-title #{val.subTitle}
+										.services__description #{val.description}
+										a(href=val.about).services__about 	&#8224; Подробнее &#8224;
+	section.section.section_gradient
+		.container
+			.projects
+				.title.title_projects Наши проекты
+				.projects__list
+					.component
+							.grid
+								-
+									let projectsItems = [
+										{
+											subTitle: "Lalique бутик",
+										},
+										{
+											subTitle: "Строительство домов",
+										},
+										{
+											subTitle: "Кофейня",
+										},
+										{
+											subTitle: "Уникальные туры",
+										},
+									];
+								each val, i in projectsItems
+									.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_3
+										.projects__item
+											img.projects__img(src=`../img/projects/i-projects-${i+1}.png`, alt="Logo")
+											.projects__mask
+												a(href="#") 
+													img.projects__icon(src="../img/projects/info button.svg", alt="Info-logo")
+												a(href="#") 	
+													img(src="../img/projects/search.svg", alt="Search-logo")
+											p.projects__sub-title #{val.subTitle}
+	section.section
+		.container
+			.team
+				img(src="../img/team.png", alt="")
+				.team__inner
+					.title.title_team Команда
+					.team__text Наша команда - это наша самая большая ценность. Мы трудились,чтобы собрать группу  экспертов, чьи навыки дополняют друг друга. У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться профессионалом, нужно развиваться, поэтому мы постоянно ищем способы, как стать лучше в том, что мы делаем.
+					button.btn
+						a(href="#") СМОТРЕТЬ ВИДЕО
+	section.section.section_cream
+		.container
+			.news
+				.title.title_news Последние новости
+					.news__list
+						.component
+							.grid
+								-
+									let newsItems = [
+										{
+											subTitle: "3Д в брендинге",
+										},
+										{
+											subTitle: "Контекстная реклама",
+										},
+										{
+											subTitle: "Графика",
+										},
+										{
+											subTitle: "Корпоративная культура",
+										},
+										{
+											subTitle: "Уникальный дизайн",
+										},
+										{
+											subTitle: "Взгляд со стороны",
+										},
+										{
+											subTitle: "Соц сети и их польза",
+										},
+										{
+											subTitle: "Эксклюзивность",
+										},
+									];
+								each val, i in newsItems
+									.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_4.grid__xl-col_3
+										.news__item
+											img.news__img(src=`../img/news/i-news-${i+1}.png`, alt="Logo")											
+											.news__sub-title #{val.subTitle}
+											.news__mask #{val.subTitle}

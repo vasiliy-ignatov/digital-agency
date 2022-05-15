@@ -1,8 +1,11 @@
-.header {    
+.header {  
+    position: fixed;  
     width: 100%;
     background-color: #2B4074;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 0px rgba(155, 155, 155, 0.5);    
     
-    &__wrapper {
+    &__wrapper {      
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -27,7 +30,7 @@
     right: 20px;
     width: 40px;
     height: 40px;    
-    z-index: 11;
+    z-index: 4;
     background-color: #fff;
     border-radius: 3px;
   }
@@ -55,17 +58,17 @@ content: '';
 
 .menu-list {
     display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 0;    
     width: 300px;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 80px 0;
     list-style: none;
     text-align: center;
     background-color: #2B4074;
-    box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);
+    box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);    
   }
 
 .menu-list__link {
@@ -95,5 +98,5 @@ content: '';
 #nav-menu:checked ~ .menu-list {
     visibility: visible;
     right: 0;
-    z-index: 10;
+    z-index: 2;
   }
