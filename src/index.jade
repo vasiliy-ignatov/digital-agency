@@ -125,38 +125,79 @@ block page
 			.news
 				.title.title_news Последние новости
 					.news__list
-						.component
-							.grid
-								-
-									let newsItems = [
-										{
-											subTitle: "3Д в брендинге",
-										},
-										{
-											subTitle: "Контекстная реклама",
-										},
-										{
-											subTitle: "Графика",
-										},
-										{
-											subTitle: "Корпоративная культура",
-										},
-										{
-											subTitle: "Уникальный дизайн",
-										},
-										{
-											subTitle: "Взгляд со стороны",
-										},
-										{
-											subTitle: "Соц сети и их польза",
-										},
-										{
-											subTitle: "Эксклюзивность",
-										},
-									];
-								each val, i in newsItems
-									.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_4.grid__xl-col_3
+						.grid
+							-
+								let newsItems = [
+									{
+										subTitle: "3Д в брендинге",
+									},
+									{
+										subTitle: "Контекстная реклама",
+									},
+									{
+										subTitle: "Графика",
+									},
+									{
+										subTitle: "Корпоративная культура",
+									},
+									{
+										subTitle: "Уникальный дизайн",
+									},
+									{
+										subTitle: "Взгляд со стороны",
+									},
+									{
+										subTitle: "Соц сети и их польза",
+									},
+									{
+										subTitle: "Эксклюзивность",
+									},
+								];
+							each val, i in newsItems
+								.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_4.grid__xl-col_3
+									.news__item
+										img.news__img(src=`../img/news/i-news-${i+1}.png`, alt="Logo")
+										.news__sub-title #{val.subTitle}
+										.news__mask #{val.subTitle}
+
+						.grid
+							.grid__col.grid__col_12.grid__md-col_6
+								.grid
+									.grid__col.grid__col_12.grid__lg-col_6
 										.news__item
-											img.news__img(src=`../img/news/i-news-${i+1}.png`, alt="Logo")											
-											.news__sub-title #{val.subTitle}
-											.news__mask #{val.subTitle}
+											img.news__img(src=`../img/news/i-news-1.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+										.news__item
+											img.news__img(src=`../img/news/i-news-5.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-2.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+										.news__item
+											img.news__img(src=`../img/news/i-news-6.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+							.grid__col.grid__col_12.grid__md-col_6
+								.grid
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-3.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+										.news__item
+											img.news__img(src=`../img/news/i-news-7.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-7.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+										.news__item
+											img.news__img(src=`../img/news/i-news-8.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге

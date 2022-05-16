@@ -841,6 +841,10 @@ main {
       border: 10px solid #2B4074;
       overflow: hidden;
       padding-bottom: 0; }
+    .news__item img {
+      display: block;
+      width: 100%;
+      height: auto; }
   .news__sub-title {
     font-size: 18px;
     font-weight: 700px;
