@@ -88,18 +88,10 @@ block page
 							.grid
 								-
 									let projectsItems = [
-										{
-											subTitle: "Lalique бутик",
-										},
-										{
-											subTitle: "Строительство домов",
-										},
-										{
-											subTitle: "Кофейня",
-										},
-										{
-											subTitle: "Уникальные туры",
-										},
+										"Lalique бутик",
+										"Строительство домов",
+										"Кофейня",
+										"Уникальные туры",
 									];
 								each val, i in projectsItems
 									.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_3
@@ -110,7 +102,7 @@ block page
 													img.projects__icon(src="../img/projects/info button.svg", alt="Info-logo")
 												a(href="#") 	
 													img(src="../img/projects/search.svg", alt="Search-logo")
-											p.projects__sub-title #{val.subTitle}
+											p.projects__sub-title #{val}
 	section.section
 		.container
 			.team
@@ -125,40 +117,24 @@ block page
 			.news
 				.title.title_news Последние новости
 					.news__list
-						.grid
+						//-.grid
 							-
 								let newsItems = [
-									{
-										subTitle: "3Д в брендинге",
-									},
-									{
-										subTitle: "Контекстная реклама",
-									},
-									{
-										subTitle: "Графика",
-									},
-									{
-										subTitle: "Корпоративная культура",
-									},
-									{
-										subTitle: "Уникальный дизайн",
-									},
-									{
-										subTitle: "Взгляд со стороны",
-									},
-									{
-										subTitle: "Соц сети и их польза",
-									},
-									{
-										subTitle: "Эксклюзивность",
-									},
+									"3Д в брендинге",
+									"Контекстная реклама",
+									"Графика",
+									"Корпоративная культура",
+									"Уникальный дизайн",
+									"Взгляд со стороны",
+									"Соц сети и их польза",
+									"Эксклюзивность",
 								];
 							each val, i in newsItems
 								.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_4.grid__xl-col_3
 									.news__item
 										img.news__img(src=`../img/news/i-news-${i+1}.png`, alt="Logo")
-										.news__sub-title #{val.subTitle}
-										.news__mask #{val.subTitle}
+										.news__sub-title #{val}
+										.news__mask #{val}
 
 						.grid
 							.grid__col.grid__col_12.grid__md-col_6
@@ -170,34 +146,56 @@ block page
 											.news__mask 3Д в брендинге
 										.news__item
 											img.news__img(src=`../img/news/i-news-5.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Контекстная реклама
+											.news__mask Контекстная реклама
 									.grid__col.grid__col_12.grid__lg-col_6
 										.news__item
 											img.news__img(src=`../img/news/i-news-2.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Графика
+											.news__mask Графика
 										.news__item
 											img.news__img(src=`../img/news/i-news-6.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Корпоративная культура
+											.news__mask Корпоративная культура
 							.grid__col.grid__col_12.grid__md-col_6
 								.grid
 									.grid__col.grid__col_12.grid__lg-col_6
 										.news__item
 											img.news__img(src=`../img/news/i-news-3.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Уникальный дизайн
+											.news__mask Уникальный дизайн
 										.news__item
 											img.news__img(src=`../img/news/i-news-7.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Взгляд со стороны
+											.news__mask Взгляд со стороны
 									.grid__col.grid__col_12.grid__lg-col_6
 										.news__item
 											img.news__img(src=`../img/news/i-news-7.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Соц сети и их польза
+											.news__mask Соц сети и их польза
 										.news__item
 											img.news__img(src=`../img/news/i-news-8.png`, alt="Logo")
-											.news__sub-title 3Д в брендинге
-											.news__mask 3Д в брендинге
+											.news__sub-title Эксклюзивность
+											.news__mask Эксклюзивность
+	section.section
+		.container
+			.quotes
+				img(src="../img/quotes.svg", alt="")
+				.swiper
+					.swiper-wrapper
+						.quotes__item.swiper-slide
+							.quotes__text Если нужно создавать либо повышать имидж компании, то 
+							span диджитал-маркетинг 
+							|является наиболее подходящим
+							.quotes__author - Маргарита Акулич
+						.quotes__item.swiper-slide
+							.quotes__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam repudiandae maiores ducimus fuga porro excepturi eligendi, 
+							span voluptatibus dolores 
+							|culpa nisi possimus nulla, animi repellendus quasi pariatur sint consequuntur velit!
+							.quotes__author - Акул Маргаритыч
+						.quotes__item.swiper-slide
+							.quotes__text Если нужно создавать либо повышать имидж компании, то 
+							span диджитал-маркетинг 
+							|является наиболее подходящим
+							.quotes__author - Маргарита Акулич
+					.swiper-pagination
