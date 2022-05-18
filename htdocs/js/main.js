@@ -42,3 +42,26 @@ for (newsItem of newsItems) {
     newsMask.style.display = none;
   })
 }*/
+
+let btnUp = document.querySelector('.btn-up');
+
+btnUp.addEventListener('click', function() {
+  window.scrollTo(0,0);
+})
+
+
+
+let projects = document.querySelector('.projects');
+let team = document.querySelector('.team');
+let news = document.querySelector('.news');
+
+let projectsBtn = document.querySelector('.footer__projects-link');
+let teamBtn = document.querySelector('.footer__projects-team');
+let newsBtn = document.querySelector('.footer__projects-news');
+
+projectsBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log(projects.offsetTop);
+  let x = Number(projects.offsetTop);
+  window.scrollTo(x,0);
+})

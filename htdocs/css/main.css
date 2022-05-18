@@ -654,10 +654,65 @@ main {
     background-color: #F9F6E5; }
 
 .footer {
-  height: 80px;
-  padding: 21px;
-  font-size: 12px;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff;
+  margin-top: 40px; }
+  .footer__logo {
+    width: 230px;
+    height: 60px;
+    background-color: #2B4074;
+    margin: 0 auto;
+    border-radius: 3px; }
+  .footer__img {
+    width: 83px; }
+  .footer__inner {
+    background-color: #2B4074;
+    margin-top: -30px;
+    padding: 85px 20px 40px;
+    width: 100%; }
+  .footer__text {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff; }
+  .footer__icons {
+    margin-top: 43px; }
+  .footer__icon {
+    margin-bottom: 16px; }
+  .footer__item {
+    margin-top: 46px;
+    margin-bottom: 40px;
+    color: #F9F6E5;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif; }
+  .footer__item-title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .footer__item-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400; }
+    .footer__item-text a {
+      display: block; }
+
+.btn-up {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: #F9F6E5;
+  padding: 56px 0 20px;
+  width: 100%;
+  transition: background-color 0.25s ease-in; }
+  .btn-up p:first-child {
+    margin-bottom: 20px; }
+  .btn-up:hover {
+    background-color: #928d70; }
 
 .promo {
   width: 100%;
