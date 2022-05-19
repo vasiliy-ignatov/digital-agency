@@ -61,7 +61,30 @@ let newsBtn = document.querySelector('.footer__projects-news');
 
 projectsBtn.addEventListener('click', function(event) {
   event.preventDefault();
-  console.log(projects.offsetTop);
   let x = Number(projects.offsetTop);
-  window.scrollTo(x,0);
+
+  window.scrollTo({
+    top: x - 70,
+    behavior: "smooth"
+  });
+})
+
+teamBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  let x = Number(team.offsetTop);
+
+  window.scrollTo({
+    top: x - 70,
+    behavior: "smooth"
+  });
+})
+
+newsBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  let x = Number(news.offsetTop);
+
+  window.scrollTo({
+    top: x - 70,
+    behavior: "smooth"
+  });
 })

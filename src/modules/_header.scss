@@ -68,7 +68,9 @@ content: '';
     list-style: none;
     text-align: center;
     background-color: #2B4074;
-    box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);    
+    box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);
+    transform: translateX(45px);
+    transition: transform 0.25s ease-in;
   }
 
 .menu-list__link {
@@ -99,4 +101,5 @@ content: '';
     visibility: visible;
     right: 0;
     z-index: 2;
+    transform: translateX(0);
   }
