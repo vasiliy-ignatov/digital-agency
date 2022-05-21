@@ -38,6 +38,10 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media ($sm) {
+        padding: 0 60px;
+    }
 }
 
 main {
@@ -69,6 +73,10 @@ main {
     color: $gray;
     font-weight: 400;
 
+    @media ($sm) {
+        font-size: 30px;
+    }
+
     &::after {
         content: "";
         width: 50px;
@@ -78,11 +86,19 @@ main {
         top: 45px;
         left: 50%;
         transform: translateX(-50%);
+
+        @media ($sm) {
+            width: 100px;
+        }
     }
 
     &_promo {
         color: $white;
         margin: 0 10px 10px;
+
+        @media ($sm) {
+            font-size: 24px;
+        }
 
         &::after {
             display: none;
@@ -94,14 +110,41 @@ main {
 
         &::after {
             width: 100px;
+
+            @media ($sm) {
+                top: 130px;
+            }
+        }
+
+        @media ($sm) {
+            font-size: 48px;
         }
     }
 
     &_projects {
         color: $white;
+
+        @media ($sm) {
+            font-size: 48px;
+
+            &::after {
+                top: 80px;
+                width: 100px;
+            }
+        }
         
         &::after {
             background-color: $white;
+        }
+    }
+
+    &_news {
+        @media ($sm) {
+            font-size: 48px;
+
+            &::after {
+                top: 70px;
+            }
         }
     }
 }

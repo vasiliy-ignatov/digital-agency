@@ -9,12 +9,20 @@
         height: 80px;
         display: flex;
         justify-content: space-between;
+
+        @media ($sm) {
+          height: 100px;
+        }
     }
 
     &__logo {
         width: 100px;
         height: 63.73px;
         margin: 7px 25px;
+
+        @media ($sm) {
+          margin: 17px 25px;
+        }
     }
 }
 
@@ -33,6 +41,11 @@
     z-index: 4;
     background-color: #fff;
     border-radius: 3px;
+
+    @media ($sm) {
+      top: 30px;
+      right: 30px;
+    }
   }
 
 .header-nav__btn > span,
@@ -102,4 +115,12 @@ content: '';
     right: 0;
     z-index: 2;
     transform: translateX(0);
+  }
+
+  .swiper-buttons{
+    display: none;
+
+    @media($sm) {
+      display:flex
+  }
   }

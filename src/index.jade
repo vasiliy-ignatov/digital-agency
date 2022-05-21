@@ -7,13 +7,19 @@ block page
 				.intro__slide.swiper-slide
 					.container
 						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
 						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
 						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						a.intro__link(href="#") ПОДРОБНЕЕ
 			.swiper-pagination
+			.swiper-buttons
+				.swiper-button-prev
+				.swiper-button-next
 	section.section
 		.promo
 			.title.title_promo Вы полюбите нас с первой встречи!
@@ -94,7 +100,7 @@ block page
 										"Уникальные туры",
 									];
 								each val, i in projectsItems
-									.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_3
+									.grid__col.grid__col_12.grid__lg-col_6.grid__xl-col_3
 										.projects__item
 											img.projects__img(src=`../img/projects/i-projects-${i+1}.png`, alt="Logo")
 											.projects__mask
