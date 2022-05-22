@@ -37,6 +37,10 @@
             margin-top: 50px;
             font-size: 18px;
         }
+
+        @media($sm) {
+            margin-top: 70px;
+        }
     }
 
     &__img {
@@ -79,6 +83,10 @@
 
     &__content {
         margin-top: 25px;
+
+        @media ($md) {
+            text-align: left;
+        }
     }
 
     &__description {

@@ -20,7 +20,23 @@
         margin-top: -30px;
         padding: 85px 20px 40px;
         width: 100%;
-    }
+
+            @media ($sm) {
+                padding-left: 36px;
+            }
+        
+            @media ($md) {
+                padding-left: 46px;
+            }
+        
+            @media ($lg) {
+                padding-left: 40px;
+            }
+        
+            @media ($xl) {
+                padding-left: 150px;
+            }
+        }
 
     &__text {
         font-size: 20px;
@@ -53,6 +69,10 @@
         color: $cream;
         text-align: center;
         font-family: $RobotoCondensed;
+
+        @media ($md) {
+            text-align: left;
+        }
     }
 
     &__item-title {
@@ -75,6 +95,8 @@
 }
 
 .btn-up {
+    display: flex;
+    flex-direction: column;
     font-family: $RobotoCondensed;
     font-size: 16px;
     line-height: 19px;
@@ -82,15 +104,35 @@
     letter-spacing: 2px;
     background-color: $cream;
     padding: 56px 0 20px;
+    min-height: 142px;
     width: 100%;
     transition: background-color 0.25s ease-in;
+    align-items: center;
+
+    @media ($sm) {
+        min-height: 42px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
 
     & p:first-child {
         margin-bottom: 20px;
+
+        @media ($sm) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
     }
 
     &:hover {
         background-color: $creamDark;
+    }
+
+    &__img {
+        @media ($sm) {
+            margin-right: 10px;
+        }
     }
 }
 

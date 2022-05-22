@@ -6,15 +6,18 @@ block page
 			.intro__slides.swiper-wrapper
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
 						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
 						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
 						a.intro__link(href="#") ПОДРОБНЕЕ
 			.swiper-pagination
 			.swiper-buttons
@@ -22,8 +25,9 @@ block page
 				.swiper-button-next
 	section.section
 		.promo
-			.title.title_promo Вы полюбите нас с первой встречи!
-			.promo__text Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.
+			.promo_content
+				.title.title_promo Вы полюбите нас с первой встречи!
+				.promo__text Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.
 			button.promo__btn Перезвоните мне
 	section.section
 		.container
@@ -79,7 +83,7 @@ block page
 									}
 								];
 							each val, i in servicesItems
-								.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+								.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_3
 									.services__item
 										img.services__img(src=`../img/services/i-services-${i+1}.png`, alt="Logo")
 										p.services__sub-title #{val.subTitle}
@@ -112,12 +116,12 @@ block page
 	section.section
 		.container
 			.team
-				img(src="../img/team.png", alt="")
+				img.team__img(src="../img/team.png", alt="")
 				.team__inner
 					.title.title_team Команда
 					.team__text Наша команда - это наша самая большая ценность. Мы трудились,чтобы собрать группу  экспертов, чьи навыки дополняют друг друга. У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться профессионалом, нужно развиваться, поэтому мы постоянно ищем способы, как стать лучше в том, что мы делаем.
-					button.btn
-						a(href="#") СМОТРЕТЬ ВИДЕО
+				button.btn
+					a(href="#") СМОТРЕТЬ ВИДЕО
 	section.section.section_cream
 		.container
 			.news
