@@ -1,7 +1,138 @@
-.footer {    
-    height: 80px;
-    padding: 21px;
-    font-size: 12px;
-    text-align: center;     
+.footer {
+    text-align: center;
+    background-color: $white;
+    margin-top: 40px;
+
+    &__logo {
+        width: 230px;
+        height: 60px;
+        background-color: $darkblue;
+        margin: 0 auto;
+        border-radius: 3px;
+    }
+
+    &__img {
+        width: 83px;
+    }
+
+    &__inner {
+        background-color: $darkblue;
+        margin-top: -30px;
+        padding: 85px 20px 40px;
+        width: 100%;
+
+            @media ($sm) {
+                padding-left: 36px;
+            }
+        
+            @media ($md) {
+                padding-left: 46px;
+            }
+        
+            @media ($lg) {
+                padding-left: 40px;
+            }
+        
+            @media ($xl) {
+                padding-left: 150px;
+            }
+        }
+
+    &__text {
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: $white;
+
+        @media($sm) {
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+
+    &__icons {
+        margin-top: 43px;
+
+        @media($sm) {
+            margin-top: 55px;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        margin-top: 46px;
+        margin-bottom: 40px;
+        color: $cream;
+        text-align: center;
+        font-family: $RobotoCondensed;
+
+        @media ($md) {
+            text-align: left;
+        }
+    }
+
+    &__item-title {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+
+        & a {
+            display: block;
+        }
+    }
+}
+
+.btn-up {
+    display: flex;
+    flex-direction: column;
+    font-family: $RobotoCondensed;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-color: $cream;
+    padding: 56px 0 20px;
+    min-height: 142px;
+    width: 100%;
+    transition: background-color 0.25s ease-in;
+    align-items: center;
+
+    @media ($sm) {
+        min-height: 42px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    & p:first-child {
+        margin-bottom: 20px;
+
+        @media ($sm) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+
+    &:hover {
+        background-color: $creamDark;
+    }
+
+    &__img {
+        @media ($sm) {
+            margin-right: 10px;
+        }
+    }
 }
 

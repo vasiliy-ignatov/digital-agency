@@ -1,3 +1,50 @@
 footer.footer
-	
-	.footer-copyright © 2022 Axure Themes
+	.container
+		.footer__logo
+			img.footer__img(src="../img/Header_logo.png", alt="Logo")
+	.footer__inner
+		.footer__text Мы хотели бы услышать все о вашем проекте. Свяжись с нами.
+		.footer__icons
+			.grid
+				-
+					let iconsItems = [
+									"https://facebook.com/",
+									"https://google.com/",
+									"https://twitter.com/",
+									"https://pinterest.com/",
+								];
+				each val, i in iconsItems
+					.grid__col.grid__col_12.grid__md-col_3
+						.footer__icon
+							a(href=val)
+								img(src=`../img/footer/i-footer-${i+1}.svg`, alt="")
+		.grid
+			.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+				.footer__item
+					.footer__item-title КОНТАКТЫ
+					.footer__item-text
+						a(href="tel:+80 555 55 66") +80 555 55 66
+						a(href="mailto:digi@gmail.com") digi@gmail.com
+			.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+				.footer__item
+					.footer__item-title АДРЕС
+					.footer__item-text
+						p Пр. Науки 107
+						p Город / Страна
+			.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+				.footer__item
+						.footer__item-title ПОМОЩЬ
+						.footer__item-text
+							a(href="#")  Как с нами связаться?
+							a(href="#") Что такое диджитал?
+							a(href="#") Стоимость услуг
+			.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_3
+				.footer__item
+					.footer__item-title МЕНЮ
+					.footer__item-text
+						a(href="#").footer__projects-link Наши проекты
+						a(href="#").footer__projects-team Команда
+						a(href="#").footer__projects-news Блог
+	button.btn-up
+		p ВВЕРХ
+		img.btn-up__img(src="../img/footer/icon-up.svg", alt="")

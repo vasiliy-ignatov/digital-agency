@@ -1,35 +1,51 @@
-.header {    
+.header {  
+    position: fixed;  
     width: 100%;
     background-color: #2B4074;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 0px rgba(155, 155, 155, 0.5);    
     
-    &__wrapper {
+    &__wrapper {      
         height: 80px;
         display: flex;
         justify-content: space-between;
+
+        @media ($sm) {
+          height: 100px;
+        }
     }
 
     &__logo {
         width: 100px;
         height: 63.73px;
         margin: 7px 25px;
+
+        @media ($sm) {
+          margin: 17px 25px;
+        }
     }
 }
 
 #nav-menu {
-    opacity: 0;
+    opacity: 0;    
   }
 
 .header-nav__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 40px;
     height: 40px;    
-    z-index: 1;
+    z-index: 4;
     background-color: #fff;
     border-radius: 3px;
+
+    @media ($sm) {
+      top: 30px;
+      right: 30px;
+    }
   }
 
 .header-nav__btn > span,
@@ -55,17 +71,19 @@ content: '';
 
 .menu-list {
     display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 0;    
     width: 300px;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 80px 0;
     list-style: none;
     text-align: center;
     background-color: #2B4074;
     box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);
+    transform: translateX(45px);
+    transition: transform 0.25s ease-in;
   }
 
 .menu-list__link {
@@ -95,4 +113,14 @@ content: '';
 #nav-menu:checked ~ .menu-list {
     visibility: visible;
     right: 0;
+    z-index: 2;
+    transform: translateX(0);
+  }
+
+  .swiper-buttons{
+    display: none;
+
+    @media($sm) {
+      display:flex
+  }
   }

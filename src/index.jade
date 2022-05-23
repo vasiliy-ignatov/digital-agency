@@ -6,15 +6,206 @@ block page
 			.intro__slides.swiper-wrapper
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
+						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
+						a.intro__link(href="#") ПОДРОБНЕЕ
 				.intro__slide.swiper-slide
 					.container
-						.intro__text МЫСЛИ ГЛОБАЛЬНО
+						.intro__title МЫСЛИ ГЛОБАЛЬНО
+						.intro__text Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
+						a.intro__link(href="#") ПОДРОБНЕЕ
 			.swiper-pagination
-				
+			.swiper-buttons
+				.swiper-button-prev
+				.swiper-button-next
+	section.section
+		.promo
+			.promo_content
+				.title.title_promo Вы полюбите нас с первой встречи!
+				.promo__text Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.
+			button.promo__btn Перезвоните мне
+	section.section
+		.container
+			.services
+				.services__content
+					.title.title_services Сервис
+					.services__promo От идеи до незабываемого и измеримого результата.
+					.services__text Интеграция безупречного производства, передовых технологий и тщательного измерения производительности.
+				.services__list
+					.component
+						.grid
+							-
+								let servicesItems = [
+									{
+										subTitle: "Стратегия",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Анализ",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Соц сети",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Развитие",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Контент",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Дизайн UX",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Таргетированная реклама",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									},
+									{
+										subTitle: "Продукт",
+										description: "Lorem ipsum dolor sit amet, consectetur",
+										about: "#"
+									}
+								];
+							each val, i in servicesItems
+								.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_3
+									.services__item
+										img.services__img(src=`../img/services/i-services-${i+1}.png`, alt="Logo")
+										p.services__sub-title #{val.subTitle}
+										.services__description #{val.description}
+										a(href=val.about).services__about 	&#8224; Подробнее &#8224;
+	section.section.section_gradient
+		.container
+			.projects
+				.title.title_projects Наши проекты
+				.projects__list
+					.component
+							.grid
+								-
+									let projectsItems = [
+										"Lalique бутик",
+										"Строительство домов",
+										"Кофейня",
+										"Уникальные туры",
+									];
+								each val, i in projectsItems
+									.grid__col.grid__col_12.grid__lg-col_6.grid__xl-col_3
+										.projects__item
+											img.projects__img(src=`../img/projects/i-projects-${i+1}.png`, alt="Logo")
+											.projects__mask
+												a(href="#") 
+													img.projects__icon(src="../img/projects/info button.svg", alt="Info-logo")
+												a(href="#") 	
+													img(src="../img/projects/search.svg", alt="Search-logo")
+											p.projects__sub-title #{val}
+	section.section
+		.container
+			.team
+				img.team__img(src="../img/team.png", alt="")
+				.team__inner
+					.title.title_team Команда
+					.team__text Наша команда - это наша самая большая ценность. Мы трудились,чтобы собрать группу  экспертов, чьи навыки дополняют друг друга. У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться профессионалом, нужно развиваться, поэтому мы постоянно ищем способы, как стать лучше в том, что мы делаем.
+				button.btn
+					a(href="#") СМОТРЕТЬ ВИДЕО
+	section.section.section_cream
+		.container
+			.news
+				.title.title_news Последние новости
+					.news__list
+						//-.grid
+							-
+								let newsItems = [
+									"3Д в брендинге",
+									"Контекстная реклама",
+									"Графика",
+									"Корпоративная культура",
+									"Уникальный дизайн",
+									"Взгляд со стороны",
+									"Соц сети и их польза",
+									"Эксклюзивность",
+								];
+							each val, i in newsItems
+								.grid__col.grid__col_12.grid__md-col_6.grid__lg-col_4.grid__xl-col_3
+									.news__item
+										img.news__img(src=`../img/news/i-news-${i+1}.png`, alt="Logo")
+										.news__sub-title #{val}
+										.news__mask #{val}
+
+						.grid
+							.grid__col.grid__col_12.grid__md-col_6
+								.grid
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-1.png`, alt="Logo")
+											.news__sub-title 3Д в брендинге
+											.news__mask 3Д в брендинге
+										.news__item
+											img.news__img(src=`../img/news/i-news-2.png`, alt="Logo")
+											.news__sub-title Контекстная реклама
+											.news__mask Контекстная реклама
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-3.png`, alt="Logo")
+											.news__sub-title Графика
+											.news__mask Графика
+										.news__item
+											img.news__img(src=`../img/news/i-news-4.png`, alt="Logo")
+											.news__sub-title Корпоративная культура
+											.news__mask Корпоративная культура
+							.grid__col.grid__col_12.grid__md-col_6
+								.grid
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-5.png`, alt="Logo")
+											.news__sub-title Уникальный дизайн
+											.news__mask Уникальный дизайн
+										.news__item
+											img.news__img(src=`../img/news/i-news-6.png`, alt="Logo")
+											.news__sub-title Взгляд со стороны
+											.news__mask Взгляд со стороны
+									.grid__col.grid__col_12.grid__lg-col_6
+										.news__item
+											img.news__img(src=`../img/news/i-news-7.png`, alt="Logo")
+											.news__sub-title Соц сети и их польза
+											.news__mask Соц сети и их польза
+										.news__item
+											img.news__img(src=`../img/news/i-news-8.png`, alt="Logo")
+											.news__sub-title Эксклюзивность
+											.news__mask Эксклюзивность
+	section.section
+		.container
+			.quotes
+				img(src="../img/quotes.svg", alt="")
+				.swiper
+					.swiper-wrapper
+						.quotes__item.swiper-slide
+							.quotes__text Если нужно создавать либо повышать имидж компании, то 
+							span диджитал-маркетинг 
+							|является наиболее подходящим
+							.quotes__author - Маргарита Акулич
+						.quotes__item.swiper-slide
+							.quotes__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam repudiandae maiores ducimus fuga porro excepturi eligendi, 
+							span voluptatibus dolores 
+							|culpa nisi possimus nulla, animi repellendus quasi pariatur sint consequuntur velit!
+							.quotes__author - Акул Маргаритыч
+						.quotes__item.swiper-slide
+							.quotes__text Если нужно создавать либо повышать имидж компании, то 
+							span диджитал-маркетинг 
+							|является наиболее подходящим
+							.quotes__author - Маргарита Акулич
+					.swiper-pagination

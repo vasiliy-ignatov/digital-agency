@@ -1,20 +1,83 @@
-.intro {
-    // height: 193px;  
-    // width: 320px;
+.intro { 
     height: 193px;
-    overflow-y: scroll;
-}
-
-.intro__text {    
-    color: #fff;
+    box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
     font-family: $RobotoCondensed;
-    font-size: 28px;
-    line-height: 28px;
     font-weight: 400;
+    color: $white;
     text-align: center;
-    padding: 36px 40px 0;    
-}
 
+    @media($sm) {
+        height: 386px;
+    }
+
+    @media($md) {
+        height: 465px;
+    }
+
+    @media($lg) {
+        height: 618px;
+    }
+
+    @media($xl) {
+        height: 668px;
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 28px;
+        padding: 36px 40px 0;
+
+        @media($sm) {
+            font-size: 60px;
+            line-height: 60px;
+            margin-top: 50px;
+            padding: 36px 50px 0;
+        }
+
+        @media($md) {
+            padding: 36px 70px 0;
+        }
+
+        @media($lg) {
+            font-size: 84px;
+            line-height: 84px;
+            padding: 36px 96px 0;
+        }
+
+        @media($xl) {
+            font-size: 96px;
+            line-height: 96px;
+            padding: 36px 230px 0;
+        }
+    }
+
+    &__text {
+        display: none;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 25px;
+
+        @media ($md) {
+            display: block;
+        }
+    }
+
+    &__link {
+        display: none;
+        width: 200px;
+        height: 50px;
+        background-color: $darkblue;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 16px 45px;
+        margin: 30px auto;
+        color: $white;
+
+        @media($sm) {
+            display: block;
+        }
+    }
+}
 .intro__slide {
     background: #333 url("../img/intro-bg.jpg") no-repeat center/cover;
 }

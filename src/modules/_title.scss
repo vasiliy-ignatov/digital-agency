@@ -1,0 +1,115 @@
+.title {
+    margin-top: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: relative;
+    color: $gray;
+    font-weight: 400;
+
+    @media ($sm) {
+        font-size: 30px;
+    }
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 8px;
+        background-color: $darkblue;
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media ($sm) {
+            width: 100px;
+        }
+    }
+
+    &_promo {
+        color: $white;
+        margin: 0 10px 10px;
+
+        &::after {
+            display: none;
+        }
+
+        @media ($sm) {
+            font-size: 24px;
+        }
+
+        @media ($md) {
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &_services {
+        color: $darkblue;
+        text-align: center;
+
+        @media ($sm) {
+            font-size: 48px;
+        }
+
+        &::after {
+            width: 100px;
+
+            @media ($sm) {
+                top: 130px;
+            }
+
+            @media ($md) {
+                left: 50px;
+            }
+        }
+    }
+
+    &_projects {
+        color: $white;
+
+        @media ($sm) {
+            font-size: 48px;
+
+            &::after {
+                top: 80px;
+                width: 100px;
+            }
+        }
+        
+        &::after {
+            background-color: $white;
+        }
+    }
+
+    &_team {
+        font-size: 24px;
+        letter-spacing: 2px;
+        position: relative;
+        color: $gray;
+        margin-top: 0;
+
+        &::after {
+            content: "";
+            width: 100px;
+            height: 8px;
+            background-color: $darkblue;
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+                        
+            @media ($md) {
+                left: 50px;
+            }
+        }
+    }
+
+    &_news {
+        @media ($sm) {
+            font-size: 48px;
+
+            &::after {
+                top: 70px;
+            }
+        }
+    }
+}

@@ -1,4 +1,13 @@
 .section {
     width: 100%;    
-    background-color: $white;    
+    background-color: $white;
+
+    &_gradient {
+        background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+    }
+
+    &_cream {
+        background-color: $cream;
+        padding-bottom: 40px;
+    }
 }

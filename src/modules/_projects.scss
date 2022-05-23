@@ -1,0 +1,67 @@
+.projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: $RobotoCondensed;
+    color: $white;
+
+    &__list {
+        margin-top: 75px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__img {
+        box-shadow: 0px 4px 4px rgba(71, 110, 77, 0.351506);
+        border-radius: 4px;
+        width: 100%;
+        }
+
+    &__sub-title {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: $darkblue;
+        margin: 20px 0;
+
+        @media ($sm) {
+            font-size: 20px;
+        }
+    }
+
+    &__mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 95%;
+        min-height: 86%;
+        background: $creamOpacity;
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        border-radius: 4px;
+        opacity: 0;
+        transition: opacity .25s ease-in;
+
+        @media ($sm) {
+            min-width: 96%;
+            min-height: 89%;
+        }
+
+        @media ($md) {
+            min-width: 92%;
+            min-height: 78%;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+}
